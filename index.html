@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="side">
+        <img src="/images/bg-main-desktop.png" alt="">
+    </div>
+    <div class="cards">
+      <div class="card-front">
+        <img src="images/bg-card-front.png" alt="f">
+        <img src="images/card-logo.svg" id="logo">
+        <h1 id="cn">0000 0000 0000 0000</h1>
+        <div class="data-div">
+          <div class="name">
+            <p>JANE APPLESEED</p>
+          </div>
+          <div class="date">
+            <p>00/00</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-back">
+        <img src="images/bg-card-back.png" alt="b">
+        <div class="data-div">
+          <div class="cvc">
+            <p>000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main-container">
+        <div class="small-container">
+          <div class="Name">
+            <label for="name">CARDHOLDER NAME</label>
+            <input type="text" name="name" id="name" placeholder="e.g. Jane Appleseed">
+          </div>
+          <div class="Number">
+            <label for="Number">CARD NUMBER</label>
+            <input type="text" name="cardnumber" id="cardnumber" placeholder="e.g. 1234 5678 9123 0000">
+          </div>
+          <div class="mm-yy-cv">
+            <div class="MMYY-container">
+              <div class="MY-label-container">
+                <label for="exp-date">EXP. DATE (MM/YY)</label>
+              </div>
+              <div class="MY-input">
+                <input type="text" name="mm" id="mm" placeholder="MM">
+                <input type="text" name="yy" id="yy" placeholder="YY">
+              </div>
+            </div>
+            <div class="cvc">
+              <label for="date">CVC</label>
+              <input type="text" name="cvc" id="cvc" placeholder="e.g. 123">
+            </div>
+          </div>
+          <div class="Submit">
+            <button id="confirm-btn">Confirm</button>
+          </div>
+      </div>
+        </div>
+      <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+    </div>
+  </div>
+  
+</body>
+</html>
